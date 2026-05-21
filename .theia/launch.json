@@ -1,0 +1,69 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "oled",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "oled",
+                "resourceId": "/oled"
+            },
+            "connections": [
+                {
+                    "name": "Texas Instruments XDS110 USB Debug Probe",
+                    "cores": [
+                        {
+                            "name": "CORTEX_M0P",
+                            "debuggerSettings": {
+                                "data": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\" ?>\n<PropertyValues/>\n"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "SEGGER J-Link Emulator_0",
+                    "cores": [
+                        {
+                            "name": "CORTEX_M0P",
+                            "debuggerSettings": {
+                                "data": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\" ?>\n<PropertyValues/>\n"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "TMX_MSPM0G3507_ProjectTemplate",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "TMX_MSPM0G3507_ProjectTemplate",
+                "resourceId": "/TMX_MSPM0G3507_ProjectTemplate"
+            }
+        },
+        {
+            "name": "Key_Kit",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "Key_Kit",
+                "resourceId": "/Key_Kit"
+            },
+            "connections": [
+                {
+                    "name": "Texas Instruments XDS110 USB Debug Probe",
+                    "cores": [
+                        {
+                            "name": "CORTEX_M0P",
+                            "debuggerSettings": {
+                                "data": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\" ?>\n<PropertyValues/>\n"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

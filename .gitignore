@@ -1,0 +1,41 @@
+# ==========================================
+# CCS / Theia 多工程全局 Gitignore 
+# 放置在 Workspace 根目录
+# ==========================================
+
+# 1. 忽略所有工程下的编译输出文件夹 (Debug/ 和 Release/)
+Debug/
+Release/
+*.out
+*.map
+*.obj
+*.d
+*.bin
+*.hex
+*.txt
+
+# 2. 忽略 C/C++ 语言服务器的庞大缓存 (截图里的 .clangd 文件夹)
+.clangd/
+.cache/
+.index/
+
+# 3. 忽略 IDE 的本地工作区缓存和临时配置
+.theia/workspace-storage/
+.launches/
+.tmp/
+
+# 4. 目标配置编译缓存 (忽略自动生成文件，保留 .ccxml)
+targetConfigs/*.cie
+targetConfigs/*.xml
+# 注意：不忽略 targetConfigs/ 文件夹本身，因为里面有重要的 .ccxml 仿真器配置
+
+# 5. 操作系统产生的垃圾文件
+.DS_Store
+Thumbs.db
+
+# ==========================================
+# ⚠️ 白名单（确保极其重要的文件不被误删）
+# ==========================================
+# 确保所有 SysConfig 配置和链接脚本被保留
+!*.syscfg
+!*.cmd
