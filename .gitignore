@@ -33,6 +33,9 @@ targetConfigs/*.xml
 .DS_Store
 Thumbs.db
 
+
+TMX_MSPM0G3507_ProjectTemplate/
+gpio_software_poll_LP_MSPM0G3507_nortos_ticlang/
 # ==========================================
 # ⚠️ 白名单（确保极其重要的文件不被误删）
 # ==========================================
