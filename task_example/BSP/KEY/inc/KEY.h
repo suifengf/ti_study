@@ -1,6 +1,8 @@
 #ifndef __KEY_H
 #define __KEY_H
+#include "ti_msp_dl_config.h"
 #include <stdint.h>
+#include "task.h"
 #define KEY_TIM_LONG 1000
 #define KEY_TIM_DOUBLE 500
 #define KEY_TIM_PRESSING 300
@@ -23,9 +25,7 @@ typedef struct
 	uint32_t delay;
 	uint32_t now;
 }Key_t;
-
-extern Key_t key;  // 增加这一行，声明外部变量
-
-void Key_Proc (void);
-
+extern Key_t key;
+extern uint8_t key1;
+void Key_Proc (void *arg);
 #endif
