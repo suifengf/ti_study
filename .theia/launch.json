@@ -64,6 +64,28 @@
                     ]
                 }
             ]
+        },
+        {
+            "name": "task",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "task",
+                "resourceId": "/task"
+            },
+            "connections": [
+                {
+                    "name": "Texas Instruments XDS110 USB Debug Probe",
+                    "cores": [
+                        {
+                            "name": "CORTEX_M0P",
+                            "debuggerSettings": {
+                                "data": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\" ?>\n<PropertyValues/>\n"
+                            }
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }
